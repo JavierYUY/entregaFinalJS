@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+main{
+    position: absolute;
+    z-index: -1;
+}
+
+h1{
+    text-align: center;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+    row-gap: 20px;
+    width: 85%;
+    margin: 0px auto 20px;
+}
+
+.divPrincipal{
+    text-align: center;
+    width: 80%;
+}
+
+.diasDiv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.dias{
+    border: 1px solid  rgb(136, 136, 136, 0.4);
+    box-shadow: 3px 5px rgb(136, 136, 136, 0.3);
+    border-radius: 10px;
+    padding: 5% 10%;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 300px;
+}
+
+.divHorarios{
+    width: 25%;
+    text-align: center;
+}
+
+.ocupado{
+    background-color: red;
+    border-style: solid;
+    border-color: black;
+    width: 50%;
+}
+
+.disponible{
+    background-color: green;
+    border-style: solid;
+    border-color: black;
+    width: 50%;
+}
+
+/* POPUP */
+.popupDetalle{
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(128, 128, 128, 0.4);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.popupDetalle>div{
+    /*background-image: url('https://marketplace.canva.com/EAFGKWZ7S3c/1/0/1600w/canva-fondo-de-pantalla-caritas-felices-aesthetic-gradiente-morado-y-rosa-yuWW9A_crYQ.jpg');*/
+    background-color: honeydew;
+    width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.closePopup{
+    text-align: end;
+    width: 100%;
+}
+
+.product-detail{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.descripcion-detail .click{
+    margin: 10px 0
+}
+.descripcion-detail .click .resultado{
+    margin: 0 10px
+}
+.descripcion-detail .click .less, .descripcion-detail .click .more{
+    border: 2px solid rgb(122, 152, 162);
+    background-color: lightblue;
+    border-radius: 50%;
+    padding: 3px 7px;
+}
+
+.divCheckBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.d-none{
+    display: none;
+}

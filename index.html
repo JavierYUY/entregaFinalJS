@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Desafio 04</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Desafio 04</h1>
+            <br>
+            <h2>Agenda Virtual Semanal</h2>
+        </header>
+        <section class="main">
+            <div class="divPrincipal">
+                <h2>Por favor elija una semana</h2>
+                <form>
+                    <label for="week">Semana:</label>
+                    <input id="week" type="week" name="week">
+                </form>
+                
+                <div class="diasDiv">
+                    <div class="dias" id="divLunes" onclick="divBotonDia('lunes')">Lunes</div>
+                    <div class="dias" id="divMartes" onclick="divBotonDia('martes')">Martes</div>
+                    <div class="dias" id="divMiercoles" onclick="divBotonDia('miercoles')">Miercoles</div>
+                    <div class="dias" id="divJueves" onclick="divBotonDia('jueves')">Jueves</div>
+                    <div class="dias" id="divViernes" onclick="divBotonDia('viernes')">Viernes</div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="popupDetalle d-none">
+        
+    </div>
+
+    <!--SCRIPT REFERENCES-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/index.js" ></script>
+</body>
+</html>
